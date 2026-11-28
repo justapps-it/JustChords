@@ -231,7 +231,7 @@ private fun ToolsRow(modifier: Modifier = Modifier) {
                     Icon(tool.icon, null, tint = JustOrange, modifier = Modifier.size(20.dp))
                 }
                 Spacer(Modifier.height(12.dp))
-                Text(t(tool.key), fontWeight = FontWeight.SemiBold, fontSize = 14.sp, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                Text(t(tool.key), fontWeight = FontWeight.SemiBold, fontSize = 13.sp, maxLines = 2, lineHeight = 16.sp, overflow = TextOverflow.Ellipsis)
             }
         }
     }
