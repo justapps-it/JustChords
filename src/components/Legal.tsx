@@ -3,7 +3,7 @@ import { go } from '../router';
 import { useSettings } from '../settings';
 
 const REPO = 'https://github.com/justapps-it/Just-Chords';
-const CONTACT = `${REPO}/issues`;
+const CONTACT = 'info@ticly.it';
 
 type Doc = { title: string; sections: [string, string[]][] };
 
@@ -11,7 +11,7 @@ const PRIVACY: Record<'it' | 'en', Doc> = {
   it: {
     title: 'Informativa sulla privacy',
     sections: [
-      ['Chi tratta i dati', [`Titolare del trattamento è JustApps (www.justapps.it), che gestisce Just-Chords. Per qualsiasi richiesta sulla privacy puoi scriverci tramite ${CONTACT}.`]],
+      ['Chi tratta i dati', [`Just-Chords è un’app di JustApps (www.justapps.it), un progetto di ticly (www.ticly.it), che è titolare del trattamento. Per qualsiasi richiesta sulla privacy scrivici a ${CONTACT}.`]],
       [
         'Senza account',
         [
@@ -63,7 +63,7 @@ const PRIVACY: Record<'it' | 'en', Doc> = {
   en: {
     title: 'Privacy policy',
     sections: [
-      ['Who handles your data', [`The data controller is JustApps (www.justapps.it), which runs Just-Chords. For any privacy request, write to us through ${CONTACT}.`]],
+      ['Who handles your data', [`Just-Chords is an app by JustApps (www.justapps.it), a ticly project (www.ticly.it), which is the data controller. For any privacy request, write to us at ${CONTACT}.`]],
       [
         'Without an account',
         [
@@ -111,11 +111,31 @@ const PRIVACY: Record<'it' | 'en', Doc> = {
   },
 };
 
+// What Google Play asks for: how to delete the account and its data.
+const DELETE: Record<'it' | 'en', Doc> = {
+  it: {
+    title: 'Eliminare l’account Just-Chords',
+    sections: [
+      ['Dall’app o dal sito', ['Apri Profilo, accedi con il tuo account e premi “Elimina account”. Account, profilo, libreria sincronizzata e progressi vengono cancellati subito e per sempre dai nostri server. Le canzoni salvate sul tuo dispositivo restano lì finché non disinstalli l’app o cancelli i dati del browser.']],
+      ['Via email', [`Se non riesci ad accedere, scrivi a ${CONTACT} dall’indirizzo dell’account chiedendo l’eliminazione: cancelliamo tutto entro 30 giorni e ti confermiamo l’avvenuta eliminazione.`]],
+      ['Cosa viene eliminato', ['Nome, email, foto del profilo, password cifrata (accesso via email), profilo dei gusti, livello e lezioni completate, libreria e scalette sincronizzate, data del consenso. Non conserviamo copie: gli unici dati che restano sono contatori anonimi per indirizzo IP che scadono entro un giorno.']],
+    ],
+  },
+  en: {
+    title: 'Delete your Just-Chords account',
+    sections: [
+      ['From the app or the website', ['Open Profile, sign in and tap “Delete account”. Your account, profile, synced library and progress are deleted from our servers at once and for good. Songs saved on your device stay there until you uninstall the app or clear the browser data.']],
+      ['By email', [`If you can’t sign in, write to ${CONTACT} from the account’s address asking for deletion: we delete everything within 30 days and confirm it.`]],
+      ['What is deleted', ['Name, email, profile picture, hashed password (email sign-in), taste profile, level and completed lessons, synced library and setlists, consent date. We keep no copies: the only data left are anonymous per-IP counters that expire within a day.']],
+    ],
+  },
+};
+
 const TERMS: Record<'it' | 'en', Doc> = {
   it: {
     title: 'Termini di utilizzo',
     sections: [
-      ['Il servizio', [`Just-Chords è un’app gratuita e open source (licenza GPL-3.0, ${REPO}) di JustApps. È fornita “così com’è”, senza garanzie di disponibilità o di esattezza di accordi, livelli e consigli.`]],
+      ['Il servizio', [`Just-Chords è un’app gratuita e open source (licenza GPL-3.0, ${REPO}) di JustApps, un progetto di ticly. Contatti: ${CONTACT}. È fornita “così com’è”, senza garanzie di disponibilità o di esattezza di accordi, livelli e consigli.`]],
       ['Età', ['Per creare un account devi avere almeno 14 anni. Confermandolo all’accesso dichiari che è vero.']],
       [
         'Contenuti di terzi',
@@ -126,7 +146,7 @@ const TERMS: Record<'it' | 'en', Doc> = {
       ],
       ['Uso corretto', ['Non usare Just-Chords in modo automatizzato o massivo, per scaricare grandi quantità di pagine o per sovraccaricare il servizio o i siti di origine.']],
       ['Account', ['Puoi eliminare l’account quando vuoi dal Profilo. Possiamo sospendere gli account usati in violazione di questi termini.']],
-      ['Responsabilità', ['Nei limiti consentiti dalla legge, JustApps non risponde di danni derivanti dall’uso dell’app. Restano salvi i diritti che la legge riconosce ai consumatori.']],
+      ['Responsabilità', ['Nei limiti consentiti dalla legge, ticly non risponde di danni derivanti dall’uso dell’app. Restano salvi i diritti che la legge riconosce ai consumatori.']],
       ['Legge applicabile', ['Si applica la legge italiana. Per i consumatori è competente il foro del luogo di residenza.']],
       ['Modifiche', [`Versione del ${TERMS_VERSION}. Le modifiche rilevanti ti saranno chieste di nuovo al prossimo accesso.`]],
     ],
@@ -134,7 +154,7 @@ const TERMS: Record<'it' | 'en', Doc> = {
   en: {
     title: 'Terms of use',
     sections: [
-      ['The service', [`Just-Chords is a free, open source app (GPL-3.0 licence, ${REPO}) by JustApps. It is provided “as is”, with no warranty of availability or of the accuracy of chords, levels and recommendations.`]],
+      ['The service', [`Just-Chords is a free, open source app (GPL-3.0 licence, ${REPO}) by JustApps, a ticly project. Contact: ${CONTACT}. It is provided “as is”, with no warranty of availability or of the accuracy of chords, levels and recommendations.`]],
       ['Age', ['You must be at least 14 to create an account. By confirming it at sign-in you declare it is true.']],
       [
         'Third-party content',
@@ -145,7 +165,7 @@ const TERMS: Record<'it' | 'en', Doc> = {
       ],
       ['Fair use', ['Don’t use Just-Chords in an automated or bulk way, to download large numbers of pages or to overload the service or the source sites.']],
       ['Account', ['You can delete your account at any time from Profile. We may suspend accounts used in breach of these terms.']],
-      ['Liability', ['To the extent permitted by law, JustApps is not liable for damages arising from the use of the app. Consumers keep the rights the law gives them.']],
+      ['Liability', ['To the extent permitted by law, ticly is not liable for damages arising from the use of the app. Consumers keep the rights the law gives them.']],
       ['Governing law', ['Italian law applies. Consumers may go to the courts of their place of residence.']],
       ['Changes', [`Version of ${TERMS_VERSION}. Material changes will be asked again at your next sign-in.`]],
     ],
@@ -153,8 +173,12 @@ const TERMS: Record<'it' | 'en', Doc> = {
 };
 
 const linkify = (text: string) =>
-  text.split(/(https?:\/\/\S+|www\.[a-z.]+)/g).map((part, i) =>
-    /^(https?:\/\/|www\.)/.test(part) ? (
+  text.split(/(https?:\/\/\S+|www\.[a-z.]+|[\w.+-]+@[\w-]+\.[a-z]{2,})/g).map((part, i) =>
+    /^[\w.+-]+@/.test(part) ? (
+      <a key={i} href={`mailto:${part}`}>
+        {part}
+      </a>
+    ) : /^(https?:\/\/|www\.)/.test(part) ? (
       <a key={i} href={part.startsWith('http') ? part : `https://${part}`} target="_blank" rel="noopener noreferrer">
         {part}
       </a>
@@ -163,9 +187,9 @@ const linkify = (text: string) =>
     ),
   );
 
-export function Legal({ doc }: { doc: 'privacy' | 'terms' }) {
+export function Legal({ doc }: { doc: 'privacy' | 'terms' | 'delete' }) {
   const { lang } = useSettings();
-  const d = (doc === 'privacy' ? PRIVACY : TERMS)[lang];
+  const d = (doc === 'privacy' ? PRIVACY : doc === 'delete' ? DELETE : TERMS)[lang];
   return (
     <article className="legal">
       <button className="link-btn" onClick={() => (history.length > 1 ? history.back() : go('/'))}>

@@ -33,7 +33,7 @@ export default function App() {
   useEffect(() => {
     void load().then(initAccount);
     // Plain URLs for the legal pages (Google's consent screen links to them).
-    if (location.pathname === '/privacy' || location.pathname === '/terms') {
+    if (location.pathname === '/privacy' || location.pathname === '/terms' || location.pathname === '/delete-account') {
       history.replaceState(null, '', `/#${location.pathname}`);
     }
     // PWA share target / Android share: /share?title=&text=&url=
@@ -77,6 +77,7 @@ export default function App() {
   else if (page === 'welcome') body = <Welcome />;
   else if (page === 'onboarding') body = <Onboarding />;
   else if (page === 'privacy' || page === 'terms') body = <Legal doc={page} />;
+  else if (page === 'delete-account') body = <Legal doc="delete" />;
   else if (page === 'tuner') body = <Tuner />;
   else if (page === 'metronome') body = <MetronomeView />;
   else if (page === 'listen') body = <Listen />;
@@ -143,7 +144,8 @@ export default function App() {
       {!stage && (
         <footer className="foot">
           <span>
-            Just-Chords · <a href="https://www.justapps.it">JustApps</a> · <a href={REPO}>GPL-3.0</a> · <a href="#/privacy">Privacy</a> · <a href="#/terms">{t('terms')}</a>
+            <a href="https://www.ticly.it" className="ticly-x">ticly × Just</a> · Just-Chords · <a href="https://www.justapps.it">JustApps</a> · <a href={REPO}>GPL-3.0</a> · <a href="#/privacy">Privacy</a> · <a href="#/terms">{t('terms')}</a> ·{' '}
+            <a href="mailto:info@ticly.it">info@ticly.it</a>
           </span>
         </footer>
       )}

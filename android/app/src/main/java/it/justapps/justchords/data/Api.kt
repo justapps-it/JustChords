@@ -58,7 +58,7 @@ class Api(
 ) {
     companion object {
         /** Version of terms and privacy policy the user accepts at sign-in. */
-        const val TERMS_VERSION = "2026-11-27"
+        const val TERMS_VERSION = "2026-11-28"
         private val FETCH_HOSTS = setOf("www.ultimate-guitar.com", "tabs.ultimate-guitar.com", "ultimate-guitar.com", "www.accordiespartiti.it", "accordiespartiti.it")
 
         fun fetchAllowed(url: String) = runCatching { URI(url) }.getOrNull()?.let { it.scheme == "https" && it.host?.lowercase() in FETCH_HOSTS } == true

@@ -1441,3 +1441,4 @@ button.card:hover { outline: 1px solid var(--orange-soft); }
 .choice.on { outline: 2px solid var(--orange); }
 .big-level { font-size: 2.4rem; font-weight: 800; }
 .onb-bottom .btn { flex: 1; }
+.ticly-x { font-weight: 700; color: var(--text) !important; text-decoration: none; }

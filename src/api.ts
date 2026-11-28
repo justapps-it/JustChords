@@ -125,7 +125,7 @@ export interface User {
 }
 
 /** Version of terms and privacy policy the user accepts at sign-in. */
-export const TERMS_VERSION = '2026-11-27';
+export const TERMS_VERSION = '2026-11-28';
 export const loginWithGoogle = (credential: string) =>
   api<Login>('/api/auth/google', { method: 'POST', body: JSON.stringify({ credential, consent: { age14: true, terms: TERMS_VERSION } }) });
 export type Login = { token: string; user: User; profile: Profile | null; created?: boolean };

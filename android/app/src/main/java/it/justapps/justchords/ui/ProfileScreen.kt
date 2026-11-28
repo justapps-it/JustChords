@@ -245,6 +245,17 @@ fun ProfileScreen() {
                     TextButton({ nav.navigate("legal/terms") }) { Text(t("terms")) }
                     TextButton({ runCatching { ctx.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.justapps.it"))) } }) { Text("JustApps") }
                 }
+                Row(Modifier.padding(horizontal = 12.dp, vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
+                    Text(
+                        "ticly × Just", fontWeight = FontWeight.Bold, fontSize = 15.sp,
+                        modifier = Modifier.clip(MaterialTheme.shapes.small).clickable { runCatching { ctx.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.ticly.it"))) } },
+                    )
+                    Spacer(Modifier.width(10.dp))
+                    Text(
+                        "info@ticly.it", color = JustOrange, fontSize = 13.sp,
+                        modifier = Modifier.clip(MaterialTheme.shapes.small).clickable { runCatching { ctx.startActivity(Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:info@ticly.it"))) } },
+                    )
+                }
                 Muted("Just-Chords ${it.justapps.justchords.BuildConfig.VERSION_NAME} · GPL-3.0", Modifier.padding(horizontal = 12.dp), small = true)
             }
         }
