@@ -50,7 +50,7 @@ else if (arg === 'major') next = `${maj + 1}.0.0`;
 else if (arg === 'minor') next = `${maj}.${min + 1}.0`;
 else if (arg === 'patch') next = `${maj}.${min}.${pat + 1}`;
 else die(`Unknown version "${arg}"`);
-console.log(`→ Just-Chords Android ${name} (${code}) → ${next} (${code + 1})`);
+console.log(`→ Just Chords Android ${name} (${code}) → ${next} (${code + 1})`);
 writeFileSync(gradleFile, gradle.replace(/versionCode = \d+/, `versionCode = ${code + 1}`).replace(/versionName = "[^"]+"/, `versionName = "${next}"`));
 
 // ---- test + build -------------------------------------------------------------------
@@ -76,7 +76,7 @@ console.log(`✓ APK ${(size / 1048576).toFixed(1)} MB · SHA-256 ${sha}`);
 // ---- commit + push → the workflow publishes the release -----------------------------
 const branch = out('git', ['rev-parse', '--abbrev-ref', 'HEAD'], { cwd: root });
 run('git', ['add', gradleFile, releaseApk], { cwd: root });
-run('git', ['commit', '-q', '-m', `Just-Chords Android ${next}`], { cwd: root });
+run('git', ['commit', '-q', '-m', `Just Chords Android ${next}`], { cwd: root });
 run('git', ['push', '-q', 'origin', branch], { cwd: root });
 console.log(`✓ Pushed ${branch}: GitHub Actions is publishing android-v${next}…`);
 

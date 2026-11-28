@@ -17,7 +17,7 @@ import it.justapps.justchords.ui.JustChordsRoot
 import it.justapps.justchords.ui.JustTheme
 import it.justapps.justchords.ui.shareRoute
 
-/** Just-Chords, native: Material 3 with the JustApps look, full screen. */
+/** Just Chords, native: Material 3 with the JustApps look, full screen. */
 class MainActivity : ComponentActivity() {
     private var pending by mutableStateOf<String?>(null)
 

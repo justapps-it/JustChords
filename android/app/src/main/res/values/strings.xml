@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name" translatable="false">Just-Chords</string>
+    <string name="app_name" translatable="false">Just Chords</string>
     <string name="google_web_client_id" translatable="false">600886543133-tmdg4a42m6vk0iimh705i0gpennvt4li.apps.googleusercontent.com</string>
     <string name="capture_channel">Video analysis</string>
     <string name="capture_title">Listening to the video</string>
-    <string name="capture_text">Just-Chords is analysing the audio of the video playing in the app.</string>
+    <string name="capture_text">Just Chords is analysing the audio of the video playing in the app.</string>
     <string name="capture_stop">Stop</string>
 </resources>

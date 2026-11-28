@@ -1,4 +1,4 @@
-// Just-Chords Worker: the static app (assets) plus a small API.
+// Just Chords Worker: the static app (assets) plus a small API.
 //   GET  /api/search?q=        chords on Ultimate Guitar and Accordi e Spartiti
 //   GET  /api/song?url=        one song page → text to import
 //   GET  /api/link?url=        YouTube / YouTube Music / Spotify link → title, artist, video

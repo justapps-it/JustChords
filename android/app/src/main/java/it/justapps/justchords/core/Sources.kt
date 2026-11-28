@@ -6,7 +6,7 @@ import java.net.URI
 // Song pages of Ultimate Guitar and Accordi e Spartiti → text to import, and
 // link recognition (src/lib/sources.ts). The app downloads the page the user
 // picks from the phone itself; search, links and recommendations go through
-// the Just-Chords API like on the web.
+// the Just Chords API like on the web.
 
 data class SearchResult(
     val source: String,

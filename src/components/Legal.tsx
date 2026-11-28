@@ -11,7 +11,7 @@ const PRIVACY: Record<'it' | 'en', Doc> = {
   it: {
     title: 'Informativa sulla privacy',
     sections: [
-      ['Chi tratta i dati', [`Just-Chords è un’app di JustApps (www.justapps.it), un progetto di ticly (www.ticly.it), che è titolare del trattamento. Per qualsiasi richiesta sulla privacy scrivici a ${CONTACT}.`]],
+      ['Chi tratta i dati', [`Just Chords è un’app di JustApps (www.justapps.it), un progetto di ticly (www.ticly.it), che è titolare del trattamento. Per qualsiasi richiesta sulla privacy scrivici a ${CONTACT}.`]],
       [
         'Senza account',
         [
@@ -55,15 +55,15 @@ const PRIVACY: Record<'it' | 'en', Doc> = {
           'Puoi presentare reclamo al Garante per la protezione dei dati personali (www.garanteprivacy.it).',
         ],
       ],
-      ['Minori', ['L’account è riservato a chi ha almeno 14 anni (art. 8 GDPR e art. 2-quinquies del Codice privacy). Senza account Just-Chords si usa liberamente.']],
-      ['Cookie e pubblicità', ['Just-Chords non usa cookie propri, non mostra pubblicità, non usa sistemi di tracciamento o profilazione pubblicitaria e non vende dati. Usa la memoria locale del browser solo per funzionare.']],
+      ['Minori', ['L’account è riservato a chi ha almeno 14 anni (art. 8 GDPR e art. 2-quinquies del Codice privacy). Senza account Just Chords si usa liberamente.']],
+      ['Cookie e pubblicità', ['Just Chords non usa cookie propri, non mostra pubblicità, non usa sistemi di tracciamento o profilazione pubblicitaria e non vende dati. Usa la memoria locale del browser solo per funzionare.']],
       ['Modifiche', [`Versione del ${TERMS_VERSION}. Se cambia in modo rilevante, te lo chiederemo di nuovo al prossimo accesso.`]],
     ],
   },
   en: {
     title: 'Privacy policy',
     sections: [
-      ['Who handles your data', [`Just-Chords is an app by JustApps (www.justapps.it), a ticly project (www.ticly.it), which is the data controller. For any privacy request, write to us at ${CONTACT}.`]],
+      ['Who handles your data', [`Just Chords is an app by JustApps (www.justapps.it), a ticly project (www.ticly.it), which is the data controller. For any privacy request, write to us at ${CONTACT}.`]],
       [
         'Without an account',
         [
@@ -104,8 +104,8 @@ const PRIVACY: Record<'it' | 'en', Doc> = {
           'You can lodge a complaint with your data protection authority (in Italy: www.garanteprivacy.it).',
         ],
       ],
-      ['Children', ['Accounts are for people aged 14 or over (art. 8 GDPR and art. 2-quinquies of the Italian privacy code). Without an account Just-Chords can be used freely.']],
-      ['Cookies and ads', ['Just-Chords sets no cookies of its own, shows no ads, uses no tracking or ad profiling and sells no data. It uses the browser’s local storage only to work.']],
+      ['Children', ['Accounts are for people aged 14 or over (art. 8 GDPR and art. 2-quinquies of the Italian privacy code). Without an account Just Chords can be used freely.']],
+      ['Cookies and ads', ['Just Chords sets no cookies of its own, shows no ads, uses no tracking or ad profiling and sells no data. It uses the browser’s local storage only to work.']],
       ['Changes', [`Version of ${TERMS_VERSION}. If it changes materially, we will ask you again at your next sign-in.`]],
     ],
   },
@@ -114,7 +114,7 @@ const PRIVACY: Record<'it' | 'en', Doc> = {
 // What Google Play asks for: how to delete the account and its data.
 const DELETE: Record<'it' | 'en', Doc> = {
   it: {
-    title: 'Eliminare l’account Just-Chords',
+    title: 'Eliminare l’account Just Chords',
     sections: [
       ['Dall’app o dal sito', ['Apri Profilo, accedi con il tuo account e premi “Elimina account”. Account, profilo, libreria sincronizzata e progressi vengono cancellati subito e per sempre dai nostri server. Le canzoni salvate sul tuo dispositivo restano lì finché non disinstalli l’app o cancelli i dati del browser.']],
       ['Via email', [`Se non riesci ad accedere, scrivi a ${CONTACT} dall’indirizzo dell’account chiedendo l’eliminazione: cancelliamo tutto entro 30 giorni e ti confermiamo l’avvenuta eliminazione.`]],
@@ -122,7 +122,7 @@ const DELETE: Record<'it' | 'en', Doc> = {
     ],
   },
   en: {
-    title: 'Delete your Just-Chords account',
+    title: 'Delete your Just Chords account',
     sections: [
       ['From the app or the website', ['Open Profile, sign in and tap “Delete account”. Your account, profile, synced library and progress are deleted from our servers at once and for good. Songs saved on your device stay there until you uninstall the app or clear the browser data.']],
       ['By email', [`If you can’t sign in, write to ${CONTACT} from the account’s address asking for deletion: we delete everything within 30 days and confirm it.`]],
@@ -135,16 +135,16 @@ const TERMS: Record<'it' | 'en', Doc> = {
   it: {
     title: 'Termini di utilizzo',
     sections: [
-      ['Il servizio', [`Just-Chords è un’app gratuita e open source (licenza GPL-3.0, ${REPO}) di JustApps, un progetto di ticly. Contatti: ${CONTACT}. È fornita “così com’è”, senza garanzie di disponibilità o di esattezza di accordi, livelli e consigli.`]],
+      ['Il servizio', [`Just Chords è un’app gratuita e open source (licenza GPL-3.0, ${REPO}) di JustApps, un progetto di ticly. Contatti: ${CONTACT}. È fornita “così com’è”, senza garanzie di disponibilità o di esattezza di accordi, livelli e consigli.`]],
       ['Età', ['Per creare un account devi avere almeno 14 anni. Confermandolo all’accesso dichiari che è vero.']],
       [
         'Contenuti di terzi',
         [
-          'Accordi e testi appartengono ai rispettivi autori, editori e a chi li ha trascritti. Just-Chords apre solo le pagine che scegli tu, per il tuo uso personale, e ne conserva il link alla fonte.',
+          'Accordi e testi appartengono ai rispettivi autori, editori e a chi li ha trascritti. Just Chords apre solo le pagine che scegli tu, per il tuo uso personale, e ne conserva il link alla fonte.',
           'Rispetta i termini dei siti di origine e non ripubblicare i contenuti. Chi ne è titolare può chiederne la rimozione tramite i contatti nell’informativa privacy.',
         ],
       ],
-      ['Uso corretto', ['Non usare Just-Chords in modo automatizzato o massivo, per scaricare grandi quantità di pagine o per sovraccaricare il servizio o i siti di origine.']],
+      ['Uso corretto', ['Non usare Just Chords in modo automatizzato o massivo, per scaricare grandi quantità di pagine o per sovraccaricare il servizio o i siti di origine.']],
       ['Account', ['Puoi eliminare l’account quando vuoi dal Profilo. Possiamo sospendere gli account usati in violazione di questi termini.']],
       ['Responsabilità', ['Nei limiti consentiti dalla legge, ticly non risponde di danni derivanti dall’uso dell’app. Restano salvi i diritti che la legge riconosce ai consumatori.']],
       ['Legge applicabile', ['Si applica la legge italiana. Per i consumatori è competente il foro del luogo di residenza.']],
@@ -154,16 +154,16 @@ const TERMS: Record<'it' | 'en', Doc> = {
   en: {
     title: 'Terms of use',
     sections: [
-      ['The service', [`Just-Chords is a free, open source app (GPL-3.0 licence, ${REPO}) by JustApps, a ticly project. Contact: ${CONTACT}. It is provided “as is”, with no warranty of availability or of the accuracy of chords, levels and recommendations.`]],
+      ['The service', [`Just Chords is a free, open source app (GPL-3.0 licence, ${REPO}) by JustApps, a ticly project. Contact: ${CONTACT}. It is provided “as is”, with no warranty of availability or of the accuracy of chords, levels and recommendations.`]],
       ['Age', ['You must be at least 14 to create an account. By confirming it at sign-in you declare it is true.']],
       [
         'Third-party content',
         [
-          'Chords and lyrics belong to their authors, publishers and transcribers. Just-Chords only opens the pages you pick, for your personal use, and keeps the link to the source.',
+          'Chords and lyrics belong to their authors, publishers and transcribers. Just Chords only opens the pages you pick, for your personal use, and keeps the link to the source.',
           'Respect the terms of the source sites and don’t republish the content. Rights holders can ask for removal through the contacts in the privacy policy.',
         ],
       ],
-      ['Fair use', ['Don’t use Just-Chords in an automated or bulk way, to download large numbers of pages or to overload the service or the source sites.']],
+      ['Fair use', ['Don’t use Just Chords in an automated or bulk way, to download large numbers of pages or to overload the service or the source sites.']],
       ['Account', ['You can delete your account at any time from Profile. We may suspend accounts used in breach of these terms.']],
       ['Liability', ['To the extent permitted by law, ticly is not liable for damages arising from the use of the app. Consumers keep the rights the law gives them.']],
       ['Governing law', ['Italian law applies. Consumers may go to the courts of their place of residence.']],

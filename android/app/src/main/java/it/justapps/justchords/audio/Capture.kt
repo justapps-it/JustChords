@@ -30,7 +30,7 @@ import kotlin.math.max
 /**
  * A recording kept in memory at 22 050 Hz (enough for chords, tempo and
  * Whisper), up to [maxSeconds]. Fed by the microphone or by the app's own
- * audio playback (the video playing in Just-Chords). Never written to disk.
+ * audio playback (the video playing in Just Chords). Never written to disk.
  */
 class Recording(private val rec: AudioRecord, private val inRate: Int, val maxSeconds: Int = 360) {
     val sampleRate = RATE

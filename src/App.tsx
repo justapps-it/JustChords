@@ -103,7 +103,7 @@ export default function App() {
         <header className="top">
           <a className="brand" href="#/">
             <img src="/favicon.svg?v=2" alt="" width="32" height="32" />
-            <span>Just-Chords</span>
+            <span>Just Chords</span>
           </a>
           <nav className="top-actions">
             <a className="nav-link learn-link" href="#/learn">
@@ -146,7 +146,7 @@ export default function App() {
           <span>
             <a href="https://www.ticly.it" className="ticly-x">
               Just × <span className="ticly">ticly</span>
-            </a> · Just-Chords · <a href="https://www.justapps.it">JustApps</a> · <a href={REPO}>GPL-3.0</a> · <a href="#/privacy">Privacy</a> · <a href="#/terms">{t('terms')}</a> ·{' '}
+            </a> · Just Chords · <a href="https://www.justapps.it">JustApps</a> · <a href={REPO}>GPL-3.0</a> · <a href="#/privacy">Privacy</a> · <a href="#/terms">{t('terms')}</a> ·{' '}
             <a href="mailto:info@ticly.it">info@ticly.it</a>
           </span>
         </footer>

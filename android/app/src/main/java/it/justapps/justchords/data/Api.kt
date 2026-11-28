@@ -19,7 +19,7 @@ import java.net.URI
 import java.net.URL
 import java.net.URLEncoder
 
-// Client for the Just-Chords API (the same Worker the website uses). Song
+// Client for the Just Chords API (the same Worker the website uses). Song
 // pages are downloaded by the phone itself first, like a browser would.
 
 class ApiError(val status: Int, message: String) : Exception(message)

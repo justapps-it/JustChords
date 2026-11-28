@@ -184,7 +184,7 @@ private fun Hero() {
                 Icon(Icons.Rounded.MusicNote, null, tint = Color.White, modifier = Modifier.size(18.dp))
             }
             Spacer(Modifier.width(10.dp))
-            Text("Just-Chords", fontWeight = FontWeight.Bold, fontSize = 17.sp)
+            Text("Just Chords", fontWeight = FontWeight.Bold, fontSize = 17.sp)
         }
         Spacer(Modifier.height(18.dp))
         Text(t("tagline"), style = MaterialTheme.typography.headlineMedium)

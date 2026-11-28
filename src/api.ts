@@ -1,4 +1,4 @@
-// Client for the Just-Chords API (src/worker). In the Android app the pages
+// Client for the Just Chords API (src/worker). In the Android app the pages
 // are served from appassets.androidplatform.net, so the API is called on the
 // real domain; song pages are fetched by the phone itself when possible.
 import { onePerSong, parseSong, relevant, searchUrl, sourceOf, parseUgSearch, type FetchedSong, type LinkInfo, type SearchResult } from './lib/sources';

@@ -60,7 +60,7 @@ function featureHtml(lang) {
   </style></head><body><div class="f">
     <div class="glow" style="width:520px;height:520px;right:-120px;top:-160px"></div>
     <div class="logo">${logo}</div>
-    <h1>Just-Chords</h1><p>${tag}</p>
+    <h1>Just Chords</h1><p>${tag}</p>
     <div class="by">Just × <span class="ticly">ticly</span></div>
     <div class="phone" style="left:600px;top:60px;transform:rotate(-6deg)"><img src="${img('song-dark')}"></div>
     <div class="phone" style="left:790px;top:110px;transform:rotate(5deg)"><img src="${img('learn')}"></div>

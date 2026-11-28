@@ -256,7 +256,7 @@ fun ProfileScreen() {
                         modifier = Modifier.clip(MaterialTheme.shapes.small).clickable { runCatching { ctx.startActivity(Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:info@ticly.it"))) } },
                     )
                 }
-                Muted("Just-Chords ${it.justapps.justchords.BuildConfig.VERSION_NAME} · GPL-3.0", Modifier.padding(horizontal = 12.dp), small = true)
+                Muted("Just Chords ${it.justapps.justchords.BuildConfig.VERSION_NAME} · GPL-3.0", Modifier.padding(horizontal = 12.dp), small = true)
             }
         }
     }
