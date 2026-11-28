@@ -183,7 +183,19 @@ const linkify = (text: string) =>
         {part}
       </a>
     ) : (
-      part
+      ticly(part, i)
+    ),
+  );
+
+/** Every standalone "ticly" in the brand font. */
+export const ticly = (text: string, key: number | string = 0) =>
+  text.split(/(?<![.@\w])(ticly)(?![.\w])/g).map((p, j) =>
+    p === 'ticly' ? (
+      <span key={`${key}-${j}`} className="ticly">
+        ticly
+      </span>
+    ) : (
+      p
     ),
   );
 

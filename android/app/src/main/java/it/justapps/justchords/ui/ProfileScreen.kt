@@ -247,7 +247,7 @@ fun ProfileScreen() {
                 }
                 Row(Modifier.padding(horizontal = 12.dp, vertical = 6.dp), verticalAlignment = Alignment.CenterVertically) {
                     Text(
-                        "ticly × Just", fontWeight = FontWeight.Bold, fontSize = 15.sp,
+                        ticlyText("Just × ticly"), fontWeight = FontWeight.Bold, fontSize = 15.sp,
                         modifier = Modifier.clip(MaterialTheme.shapes.small).clickable { runCatching { ctx.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.ticly.it"))) } },
                     )
                     Spacer(Modifier.width(10.dp))
@@ -302,7 +302,7 @@ fun LegalScreen(doc: String) {
                     for (para in ps) {
                         val url = Regex("https?://\\S+|www\\.[a-z.]+").find(para)?.value
                         Text(
-                            para, Modifier.padding(bottom = 8.dp).then(
+                            ticlyText(para), Modifier.padding(bottom = 8.dp).then(
                                 if (url != null) Modifier.clickable { runCatching { ctx.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(if (url.startsWith("http")) url else "https://$url"))) } } else Modifier,
                             ),
                             color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.85f), lineHeight = 22.sp,

@@ -11,6 +11,7 @@ const shots = path.join(root, 'android/app/build/outputs/roborazzi');
 const out = path.join(root, 'store');
 const img = (n) => 'data:image/png;base64,' + fs.readFileSync(path.join(shots, n + '.png')).toString('base64');
 const logo = fs.readFileSync(path.join(root, 'public/favicon.svg'), 'utf8');
+const dela = fs.readFileSync(path.join(root, 'public/fonts/dela-gothic-one-latin.woff2')).toString('base64');
 
 const SCREENS = [
   ['song', { it: ['Tutti gli <b>accordi</b>', 'Trova la canzone, trasponi, scegli il capotasto.'], en: ['Every <b>chord</b> you need', 'Find the song, transpose, pick the capo.'] }],
@@ -22,6 +23,8 @@ const SCREENS = [
 ];
 
 const css = `
+  @font-face { font-family: 'Dela Gothic One'; src: url(data:font/woff2;base64,${dela}) format('woff2'); }
+  .ticly { font-family: 'Dela Gothic One'; font-weight: 400; }
   * { margin: 0; box-sizing: border-box; }
   body { font-family: Inter, sans-serif; background: #0f0f10; color: #f5f5f7; }
   .glow { position: absolute; border-radius: 50%; filter: blur(120px); background: #ff5a1f; opacity: .28; }
@@ -52,13 +55,13 @@ function featureHtml(lang) {
     .logo svg { width: 100%; height: 100%; }
     h1 { position: absolute; left: 70px; top: 230px; font-size: 76px; font-weight: 800; letter-spacing: -2px; }
     p { position: absolute; left: 72px; top: 330px; font-size: 26px; line-height: 1.4; color: #a1a1a6; }
-    .by { position: absolute; left: 72px; bottom: 34px; font-size: 18px; color: #6e6e73; font-weight: 700; }
+    .by { position: absolute; left: 72px; bottom: 30px; font-size: 22px; color: #a1a1a6; font-weight: 700; }
     .phone { width: 300px; height: 640px; border-radius: 40px; border-width: 8px; }
   </style></head><body><div class="f">
     <div class="glow" style="width:520px;height:520px;right:-120px;top:-160px"></div>
     <div class="logo">${logo}</div>
     <h1>Just-Chords</h1><p>${tag}</p>
-    <div class="by">ticly × Just</div>
+    <div class="by">Just × <span class="ticly">ticly</span></div>
     <div class="phone" style="left:600px;top:60px;transform:rotate(-6deg)"><img src="${img('song-dark')}"></div>
     <div class="phone" style="left:790px;top:110px;transform:rotate(5deg)"><img src="${img('learn')}"></div>
   </div></body></html>`;

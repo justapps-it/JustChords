@@ -1442,3 +1442,10 @@ button.card:hover { outline: 1px solid var(--orange-soft); }
 .big-level { font-size: 2.4rem; font-weight: 800; }
 .onb-bottom .btn { flex: 1; }
 .ticly-x { font-weight: 700; color: var(--text) !important; text-decoration: none; }
+@font-face {
+  font-family: 'Dela Gothic One';
+  src: url('/fonts/dela-gothic-one-latin.woff2') format('woff2');
+  font-display: swap;
+  unicode-range: U+0000-00FF;
+}
+.ticly { font-family: 'Dela Gothic One', var(--font, Inter), sans-serif; font-weight: 400; letter-spacing: 0.01em; }

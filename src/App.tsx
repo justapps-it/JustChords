@@ -144,7 +144,9 @@ export default function App() {
       {!stage && (
         <footer className="foot">
           <span>
-            <a href="https://www.ticly.it" className="ticly-x">ticly × Just</a> · Just-Chords · <a href="https://www.justapps.it">JustApps</a> · <a href={REPO}>GPL-3.0</a> · <a href="#/privacy">Privacy</a> · <a href="#/terms">{t('terms')}</a> ·{' '}
+            <a href="https://www.ticly.it" className="ticly-x">
+              Just × <span className="ticly">ticly</span>
+            </a> · Just-Chords · <a href="https://www.justapps.it">JustApps</a> · <a href={REPO}>GPL-3.0</a> · <a href="#/privacy">Privacy</a> · <a href="#/terms">{t('terms')}</a> ·{' '}
             <a href="mailto:info@ticly.it">info@ticly.it</a>
           </span>
         </footer>

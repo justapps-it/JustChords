@@ -61,6 +61,22 @@ val LocalJust = staticCompositionLocalOf { LightJust }
 private fun inter(w: Int) = Font(R.font.inter, FontWeight(w), variationSettings = FontVariation.Settings(FontVariation.weight(w)))
 
 val Inter = FontFamily(inter(400), inter(500), inter(600), inter(700), inter(800))
+/** The ticly wordmark font. */
+val DelaGothic = FontFamily(Font(R.font.dela_gothic_one))
+
+/** Text with every standalone "ticly" in Dela Gothic One (not inside www.ticly.it or info@ticly.it). */
+fun ticlyText(s: String): androidx.compose.ui.text.AnnotatedString = androidx.compose.ui.text.buildAnnotatedString {
+    var last = 0
+    for (m in Regex("(?<![.@\\w])ticly(?![.\\w])").findAll(s)) {
+        append(s.substring(last, m.range.first))
+        pushStyle(androidx.compose.ui.text.SpanStyle(fontFamily = DelaGothic))
+        append(m.value)
+        pop()
+        last = m.range.last + 1
+    }
+    append(s.substring(last))
+}
+
 val PlexMono = FontFamily(Font(R.font.plex_mono, FontWeight.Normal), Font(R.font.plex_mono_medium, FontWeight.Medium), Font(R.font.plex_mono_medium, FontWeight.SemiBold))
 
 private fun scheme(dark: Boolean, j: JustColors): ColorScheme = if (dark) {

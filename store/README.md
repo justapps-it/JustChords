@@ -47,7 +47,7 @@ Accordatore preciso, metronomo, riconoscimento degli accordi dal vivo, scalette 
 👤 IL TUO ACCOUNT, SE VUOI
 Tutto funziona anche senza account. Con Google o con email sincronizzi canzoni, scalette e progressi su tutti i tuoi dispositivi. Incolla una playlist e ricevi consigli di canzoni adatte al tuo livello.
 
-Open source (GPL-3.0). Un progetto ticly × Just.
+Open source (GPL-3.0). Un progetto Just × ticly.
 
 ## Listing — English
 
@@ -76,7 +76,7 @@ Accurate tuner, metronome, live chord recognition, setlists and a stage mode wit
 👤 YOUR ACCOUNT, IF YOU WANT
 Everything works without an account. With Google or email you sync songs, setlists and progress across your devices. Paste a playlist and get song suggestions for your level.
 
-Open source (GPL-3.0). A ticly × Just project.
+Open source (GPL-3.0). A Just × ticly project.
 
 ## App content (Policy → App content)
 
